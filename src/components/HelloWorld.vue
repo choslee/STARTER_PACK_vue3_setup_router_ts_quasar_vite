@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { reactive, ref } from "vue";
-import { QBtn } from "quasar";
 
 defineProps<{ msg: string }>();
 
@@ -25,7 +24,7 @@ const reactiveVar = reactive({
  
   <br>
   <p>Auto import Vue part ref  {{reactiveVar.name}} </p>
-
-</template>
+  
+  </template>
 
 <style scoped></style>
