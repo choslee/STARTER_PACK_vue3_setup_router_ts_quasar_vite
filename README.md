@@ -1,4 +1,10 @@
 # Vue 3 + Typescript + Vite
+1) Installed Vite and then added @qasar/extra and @quasar/vite-plugin (see: https://quasar.dev/start/vite-plugin)
+2) Replaced main.js, vitejs.dev/config  and added src/quasar-variables.sass(see: https://quasar.dev/start/vite-plugin#using-quasar)
+3) Imported Animate functions in main.js (import @quasar/extras/animate/fadeIn.css) so now can used in transitions
+4) Added unplugin-vue-components plugin for auto import vue components (see: https://www.npmjs.com/package/unplugin-vue-components)
+5) Added unplugin-auto-import plugin (see: https://github.com/antfu/unplugin-auto-import)
+
 
 This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
