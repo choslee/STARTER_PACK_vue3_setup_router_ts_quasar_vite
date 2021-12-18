@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import { QBtn } from "quasar";
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+const reactiveVar = reactive({
+  name: "Pera"
+});
+
 </script>
 
 <template>
@@ -16,6 +20,12 @@ const count = ref(0);
   >
     <q-btn color="secondary" icon="mail" label="Email" />
   </transition>
+  <hr>
+  <p>Auto import Vue part ref {{count}} (see: auto-imports.d.ts)</p>
+ 
+  <br>
+  <p>Auto import Vue part ref  {{reactiveVar.name}} </p>
+
 </template>
 
 <style scoped></style>
