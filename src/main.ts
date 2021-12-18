@@ -9,8 +9,9 @@ import "@quasar/extras/roboto-font/roboto-font.css";
 import "@quasar/extras/mdi-v6/mdi-v6.css";
 
 // A few examples for animations from Animate.css:
-// import @quasar/extras/animate/fadeIn.css
-// import @quasar/extras/animate/fadeOut.css
+import "@quasar/extras/animate/fadeIn.css";
+import "@quasar/extras/animate/fadeOut.css";
+import "@quasar/extras/animate/bounce.css";
 
 // Import Quasar css
 import "quasar/src/css/index.sass";
