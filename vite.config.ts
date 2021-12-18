@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -49,11 +50,12 @@ export default defineConfig({
           // ]
         }
       ],
-      
+
       // custom resolvers see https://github.com/antfu/unplugin-auto-import/pull/23/
       resolvers: [
         /* ... */
       ]
-     }),
+    }),
+    Components({ /* options */ }),
   ]
 })
