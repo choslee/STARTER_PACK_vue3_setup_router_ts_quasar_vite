@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+import { RouterLink } from 'vue-router';
+import { RouterView } from 'vue-router';
+
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Vue3 + TS +Vite + Quasar"/>
+  <div id="nav" >
+    <RouterLink to="/">Home</RouterLink> | 
+    <RouterLink to="/about">About</RouterLink>
+  </div>
+
+  <RouterView></RouterView>
 </template>
 
 <style>

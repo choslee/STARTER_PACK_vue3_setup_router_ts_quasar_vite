@@ -3,28 +3,19 @@ import { reactive, ref } from "vue";
 
 defineProps<{ msg: string }>();
 
-const count = ref(0);
-const reactiveVar = reactive({
-  name: "Pera"
-});
+const refTest = ref("Test ref value");
 
 </script>
 
 <template>
-  <h5>{{ msg }}</h5>
-  <transition
-    appear
-    enter-active-class="animated bounce"
-    leave-active-class="animated fadeOut"
-  >
-    <q-btn color="secondary" icon="mail" label="Email" />
-  </transition>
-  <hr>
-  <p>Auto import Vue part ref {{count}} (see: auto-imports.d.ts)</p>
- 
+  <p>Some text send as props: "{{msg}}"</p>
   <br>
-  <p>Auto import Vue part ref  {{reactiveVar.name}} </p>
-  
+  <p>Testing auto import ref {{refTest}} (see: auto-imports.d.ts)</p>
+   
   </template>
 
-<style scoped></style>
+<style scoped>
+  tamplate {
+    background-color: aquamarine;
+  }
+</style>
