@@ -5,9 +5,13 @@ import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div id="nav" >
-    <RouterLink to="/">Home</RouterLink> | 
-    <RouterLink to="/about">About</RouterLink>
+  <div id="nav">
+    <RouterLink :to=" {
+      name: 'Home'
+    } ">Home</RouterLink>|
+    <RouterLink :to=" {
+      name: 'About'
+    } ">About</RouterLink>
   </div>
 
   <RouterView></RouterView>
